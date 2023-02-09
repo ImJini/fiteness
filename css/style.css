@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 *{
 	margin: 0 ;
 	padding: 0;
@@ -8,4 +9,37 @@ body{
 	color: #fff;
 	font-size: 14px;
 	background-color: #4f0600;
+}
+.d-none{
+	display: none;
+}
+.top-bar-outer{
+	background-color: white;
+}
+.top-bar{
+	max-width: 800px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-betwwen; /* 수평정렬 ㅣ 양끝 */
+	align-items: center ;
+}
+.top-menu a{
+	font-size: 0.875rem;
+	color: #666666;
+	text-decoration: none; /* 텍스트 꾸밈 밑줄: 없음 */
+}
+.top-menu a:nth-child(2){ /*두번째 a를 선택 좌우여백 추가*/
+	margin: 0 1rem;
+}
+.marketing-outer{
+	background-color: white;
+}
+.marketing{
+	max-width: 800px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-betwwen; /* 수평정렬 ㅣ 양끝 */
+}
+.text p{
+	color: black;
 }
