@@ -1,95 +1,90 @@
 @charset "UTF-8";
-
-*{
-   margin: 0 ;
-   padding: 0;
+@import "./reset.css";
+/* 유인물 1~4번 항목 설정 */
+html { font-size: 16px; }
+body {
+	font-family: "Roboto Condensed", "Noto Sans KR", sans-serif;
+	color: #fff;
+	font-size: 14px;
+	background-color: #4f0600;	
 }
-body{
-   font-family: "Roboto Condensed", "Noto Sans KR", sans-serif;
-   color: #fff;
-   font-size: 14px;
-   background-color: #4f0600;
+.d-none {
+	display: none;
 }
-.d-none{
-   display: none;
+.top-bar-outer {
+	background-color: white;
 }
-.top-bar-outer{
-   background-color: white;
+.top-bar {
+	max-width: 800px;
+	margin: 0 auto;	
+	display: flex;
+	justify-content: space-between; /* 수평정렬 : 양끝 */
+	align-items: center; /* 수직정렬: 중앙 */
 }
-.top-bar{
-   max-width: 800px;
-   margin:0 auto;
-   display: flex;
-   justify-content: space-between; /* 수평정렬 ㅣ 양끝 */
-   align-items: center ;
+.top-menu a {
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none; /* 텍스트-꾸밈(밑줄) : 없음 */
 }
-.top-menu a{
-   font-size: 0.875rem;
-   color: #666666;
-   text-decoration: none; /* 텍스트 꾸밈 밑줄: 없음 */
+.top-menu a:nth-child(2){ /* 두번째 a를 선택, 좌우 여백 추가 */
+	margin: 0 1rem;
 }
-.top-menu a:nth-child(2){ /*두번째 a를 선택 좌우여백 추가*/
-   margin: 0 1rem;
+.marketing-outer {
+	background-color: white;
+	height: 500px;
 }
-.marketing-outer{
-   background-color: white;
-   height: 500px;
+.marketing {
+	max-width: 800px;
+	margin: 0 auto;	
+	display: flex;
+	justify-content: space-between; /* 수평정렬 : 양끝 */
+	position: relative;
+	top: 135px;
 }
-.marketing{
-   max-width: 800px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-betwwen; /* 수평정렬 ㅣ 양끝 */
-   position: relative;
-   top: 135px;
+.text {
+	width: 300px;
+	position: relative
 }
-.text{
-   width: 300px;
-   position: relative;
+.text p {
+	color: black
 }
-.text p{
-   color: black;
+.text p:nth-child(1) {
+	font-size: 60px;
+	color: #000000; /* 000 */
+	position: absolute;
+	left:0px;
+	top:70px;
+	
 }
-.text p:nth-child(1){ /*여기가 빌드*/
-   font-size: 60px;
-   color: #000000; /* 000 */
-   position: absolute;
-   left: 0px;
-   top: 80px;
-}
-
 .text p:nth-child(2) {
-   font-size: 60px;
-   color: #cf160c ;
-   position: absolute;
-   left: 0;
-   top: 130px;
-   
-} 
+	font-size: 60px;
+	color: #cf160c;
+	position: absolute;
+	left: 0;
+	top: 130px;
+}
 .text p:nth-child(3) {
-   font-size: 90px;
-   color: #000000 ;
-   position: absolute;
-   left: 100px;
-   top: 130px;
-   
-} 
-.menu-outer{
-   background-color: #830e04;
-   padding: 1rem 0;
-   
-}
-.menu{
-   max-width: 800px;
-   margin: auto;
-   text-align: right;
-}
-.menu a{
-   color: #ffffff; /*white*/
-   text-decoration: none;
-   cursor: pointer;
+	font-size: 90px;
+	color: #000000; /* 000 */
+	position: absolute;
+	left: 100px;
+	top: 130px;	
 }
 
-.menu a:nth-child(2){
-   margin: 0 1rem
+.menu-outer {
+	background-color: #830e04;
+	padding: 1rem 0;	
+}
+.menu {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right
+}
+.menu a {
+	color: #ffffff; /* white */
+	text-decoration: none;
+	cursor: pointer;
+}
+.menu a:nth-child(2) {
+	margin: 0 1rem
 }
